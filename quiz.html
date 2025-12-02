@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
+    <link rel="stylesheet" href="styles/stylesQuiz.css" />
+    <link rel="stylesheet" href="styles/allgemein.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Navigation -->
+      <div class="navbar">
+        <p class="aviaGuide">Algorithmen.</p>
+        <a class="navSchrift" href="index.html">Home</a>
+        <a class="navSchrift" href="explore.html">Entdecken</a>
+
+        <a class="navSchrift" href="about.html">About</a>
+        <a class="navSchrift" href="quiz.html">Spiel</a>
+      </div>
+      <div id="divButtons">
+        <i>fortschritt</i>
+
+        <i
+          class="hgi hgi-stroke hgi-thumbs-up"
+          id="thumbUp"
+          onclick="toggleActive(this)"
+        ></i>
+
+        <i
+          class="hgi hgi-stroke hgi-thumbs-down"
+          id="thumbDown"
+          onclick="toggleActive(this)"
+        ></i>
+
+        <button href="index.html" id="ergebnis">Ergebnis ansehen</button>
+      </div>
+    </main>
+
+    <section>
+      <div class="Video">
+        <video src="videos/test.mp4" autoplay loop></video>
+      </div>
+    </section>
+
+    <button class="textNaechste" onclick="searchVideo()">Nächstes Video</button>
+  </body>
+  <script src="script.js"></script>
+</html>

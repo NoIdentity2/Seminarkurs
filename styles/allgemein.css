@@ -1,0 +1,62 @@
+/* Navbar */
+body {
+  color: black;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0); /* Dunkler, halbtransparenter Hintergrund */
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.aviaGuide {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.navSchrift {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navSchrift:hover {
+  color: #ffcc00; /* Goldene Farbe beim Hover */
+}
+
+/* Footer */
+footer {
+  background: #081025;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffcc00;
+}

@@ -1,0 +1,33 @@
+main {
+  border-style: solid;
+  border-color: yellow;
+  display: flex;
+}
+
+nav {
+  display: flex;
+}
+
+#divVideo {
+  border-color: green;
+  border-style: solid;
+}
+
+#divButtons {
+  border-style: solid;
+  border-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.hgi:hover {
+  color: green;
+}
+
+.active {
+  color: blue;
+}
+
+.pages {
+  border-style: solid;
+}
