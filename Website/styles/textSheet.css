@@ -1,0 +1,24 @@
+/* Text über dem Bild */
+
+.heroLinkAufSeite {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+.heroLinkAufSeite:hover {
+  color: #ffcc00;
+}
+
+.hero-text2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+/* Explore Page*/

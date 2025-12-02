@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* Einleitungsbild */
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin-top: 0px; /* Platz für die Navbar */
+}
+
+/* Container für das Bild mit Text */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-text {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+
+  padding: 10px;
+}
+
+.hero-text-Klein {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(201, 177, 106);
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* KARTEN */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: stretch;
+  gap: 2vw; /* Dynamischer Abstand zwischen Karten */
+  margin-top: 0px;
+  padding: 2vw; /* Gleichmäßiger Abstand zum Rand */
+  min-height: 600px;
+}
+
+.card {
+  flex: 1;
+  background-color: #6d7074;
+  border-radius: 20px;
+  color: white;
+  padding: 2vw; /* Innenabstand wächst mit Fenster */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-decoration: none; /* Unterstreichung entfernen */
+  cursor: pointer; /* Zeigt an, dass klickbar */
+  transition: all 0.3s ease; /* Sanfte Animation */
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #3b4045;
+}
+
+/* Textgrößen skalieren mit der Fensterbreite */
+.card h3 {
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 2rem);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  font-size: clamp(0.8rem, 0.9vw + 0.5rem, 1.2rem);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* INHALT VON TEXTBOXEN*/
+
+.info-section {
+  background: rgb(47, 47, 48);
+  padding: 0;
+  padding: 35px;
+  padding-bottom: 0px;
+}
+
+.info-box {
+  background: rgb(0, 0, 0);
+  border-radius: 0; /* entfernt Rundungen an den Seiten */
+  border-radius: 20px; /* Rundungen oben/unten */
+  padding: 50px;
+
+  color: white;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.info-box p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#Algorithmen {
+  scroll-margin-top: 300px;
+}
+
+#PolitischeSituation {
+  scroll-margin-top: 300px;
+}
+
+#EinflussAlgorithmen {
+  scroll-margin-top: 300px;
+}
+
+#Karten {
+  scroll-margin-top: 300px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reels</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css"
+    />
+    <link rel="stylesheet" href="styles/stylesQuiz.css" />
+  </head>
+  <body>
+    <main>
+      <div id="divButtons">
+        <i>fortschritt</i>
+
+        <i
+          class="hgi hgi-stroke hgi-thumbs-up"
+          id="thumbUp"
+          onclick="toggleActive(this)"
+        ></i>
+
+        <i
+          class="hgi hgi-stroke hgi-thumbs-down"
+          id="thumbDown"
+          onclick="toggleActive(this)"
+        ></i>
+
+        <button href="index.html" id="ergebnis">Ergebnis ansehen</button>
+      </div>
+    </main>
+
+    <section>
+      <div class="Video">
+        <video
+          src="videos/0dfe5f1d-6932-493c-9397-b62a2f904ef3.mp4"
+          autoplay
+          loop
+        ></video>
+      </div>
+    </section>
+
+    <button class="textNaechste" onclick="searchVideo()">Nächstes Video</button>
+  </body>
+  <script src="script.js"></script>
+</html>
