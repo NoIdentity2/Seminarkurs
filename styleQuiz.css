@@ -1,0 +1,167 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0); /* Dunkler, halbtransparenter Hintergrund */
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.aviaGuide {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.navSchrift {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.navSchrift:hover {
+  color: #ffcc00; /* Goldene Farbe beim Hover */
+}
+
+
+/* Grunddesign */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ background: #000;
+ color: white;
+ font-family: Arial, sans-serif;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+/* Bereich oben: Buttons wie Insta-Rechts-Seite */
+main {
+ position: relative;
+ right: 20px;
+ display: flex;
+ flex-direction:row;
+ z-index: 20;
+ height: 90dvh;
+}
+#divButtons {
+ display: flex;
+ flex-direction: column;
+ gap: 25px;
+ align-items: center;
+ height: 85dvh;
+}
+#divButtons i {
+ font-size: 35px;
+}
+#divButtons i:hover {
+ transform: scale(1.15);
+ cursor: pointer;
+}
+.active {
+ color: #ff0050; /* Insta-Like-Farbe */
+}
+#ergebnis {
+ margin-top: 20px;
+ padding: 8px 14px;
+ background: white;
+ color: black;
+ border: none;
+ border-radius: 12px;
+ cursor: pointer;
+ font-weight: bold;
+ transition: 0.2s;
+}
+#ergebnis:hover {
+ background: #e6e6e6;
+}
+/* Videobereich wie Insta-Reels */
+section {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-top: 0px;
+}
+.VideoPlayer {
+ height: 85dvh;
+ border-radius: 14px;
+ overflow: hidden;
+ position: relative;
+ box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+#Video {
+ height: 100%;
+ object-fit: cover;
+}
+/* Nächstes Video Button unten */
+#NaechstesVideo {
+ margin-top: 20px;
+ background: none;
+ border: 1px solid white;
+ padding: 10px 20px;
+ border-radius: 30px;
+ color: white;
+ cursor: pointer;
+ font-size: 18px;
+ transition: 0.2s;
+}
+#NaechstesVideo:hover {
+ border-color: #ff0050;
+ color: #ff0050;
+}
+
+#progress{
+    padding-top: 20px;
+}
+
+#note{
+    font-size: 12px;
+    padding-top: 80px;
+}
+
+#evaluation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 70%;
+    visibility: hidden;
+}
+
+#slider{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 7px;
+    border-radius: 200px;
+    background: linear-gradient(to right, red, green, red);
+}
+
+#txtEval{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#btnReset{
+    margin-top: 20px;
+    padding: 8px 14px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
